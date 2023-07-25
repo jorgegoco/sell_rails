@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+PS4:
+  title: PS4 New
+  description: New PS4
+  price: 300
+
+Switch:
+  title: Switch Used
+  description: Used Switch
+  price: 225
