@@ -55,5 +55,14 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     patch product_path(products(:PS4)), params: { product: { price: nil } }
 
     assert_response :unprocessable_entity
-  end 
+  end
+
+  test 'should destroy product' do
+    assert_difference('Product.count', -1) do
+      delete product_path(products(:PS4))
+    end
+
+    assert_redirected_to products_path
+    assert_equal flash[:notice], 'Product was successfully deleted.', status: :see_other
+  end
 end
