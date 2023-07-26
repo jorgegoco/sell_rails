@@ -21,7 +21,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     get new_product_path
 
     assert_response :success
-    assert_select 'form' 
+    assert_select 'form'
   end
 
   test 'should create product' do
@@ -36,4 +36,24 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
     assert_response :unprocessable_entity
   end
+
+  test 'should get edit' do
+    get edit_product_path(products(:PS4))
+
+    assert_response :success
+    assert_select 'form'
+  end
+
+  test 'should update product' do
+    patch product_path(products(:PS4)), params: { product: { price: '265' } }
+
+    assert_redirected_to products_path
+    assert_equal flash[:notice], 'Product was successfully updated.'
+  end 
+
+  test 'should not update product' do
+    patch product_path(products(:PS4)), params: { product: { price: nil } }
+
+    assert_response :unprocessable_entity
+  end 
 end
