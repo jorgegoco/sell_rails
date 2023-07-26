@@ -28,6 +28,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     post products_path, params: { product: { title: 'Xbox', description: 'New Xbox', price: '275' } }
 
     assert_redirected_to products_path
+    assert_equal flash[:notice], 'Product was successfully created.'
   end
 
   test 'should not create product with empty fields' do
