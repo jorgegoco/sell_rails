@@ -5,7 +5,15 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     get products_path
 
     assert_response :success
-    assert_select '.product', 3 
+    assert_select '.product', 3
+    assert_select '.category',3
+  end
+
+  test 'should get index filtered by category' do
+    get products_path(category_id: categories(:computers).id)
+
+    assert_response :success
+    assert_select '.product', 1
   end
 
   test 'should get show' do

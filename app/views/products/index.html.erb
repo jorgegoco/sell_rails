@@ -1,7 +1,10 @@
-<h1>Products</h1>
+<%= turbo_frame_tag 'categories' do %>
 
-<%= link_to 'See All', products_path %>
+  <h1>Products</h1>
 
-<%= render partial: 'category', collection: @categories %>
+  <%= link_to 'See All', products_path %>
 
-<%= render partial: 'product', collection: @products %>
+  <%= render partial: 'category', collection: @categories %>
+
+  <%= render partial: 'product', collection: @products %>
+<% end %>
