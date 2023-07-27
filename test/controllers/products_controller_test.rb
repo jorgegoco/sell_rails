@@ -5,7 +5,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     get products_path
 
     assert_response :success
-    assert_select '.product', 2 
+    assert_select '.product', 3 
   end
 
   test 'should get show' do
@@ -25,7 +25,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should create product' do
-    post products_path, params: { product: { title: 'Xbox', description: 'New Xbox', price: '275' } }
+    post products_path, params: { product: { title: 'Xbox', description: 'New Xbox', price: '275', category_id: categories(:videogames).id } }
 
     assert_redirected_to products_path
     assert_equal flash[:notice], 'Product was successfully created.'

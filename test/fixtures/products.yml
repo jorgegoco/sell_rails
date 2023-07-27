@@ -4,8 +4,18 @@ PS4:
   title: PS4 New
   description: New PS4
   price: 300
+  category: videogames
 
 Switch:
   title: Switch Used
   description: Used Switch
   price: 225
+  category: videogames
+
+Air:
+  title: Macbook Air
+  description: New Macbook Air
+  price: 1000
+  category: computers  
+
+
