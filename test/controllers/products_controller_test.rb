@@ -32,6 +32,22 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_select 'h2', 'Switch Used'
   end
 
+  test 'should get index filtered by option Most expensive' do
+    get products_path(order_by: 'expensive')
+
+    assert_response :success
+    assert_select '.product', 3
+    assert_select '.products .product:first-child h2', 'Macbook Air'
+  end
+
+  test 'should get index filtered by option Cheapest' do
+    get products_path(order_by: 'cheapest')
+
+    assert_response :success
+    assert_select '.product', 3
+    assert_select '.products .product:first-child h2', 'Switch Used'
+  end
+
   test 'should get show' do
     get product_path(products(:PS4))
 
