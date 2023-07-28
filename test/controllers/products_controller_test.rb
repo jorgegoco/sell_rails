@@ -16,6 +16,14 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_select '.product', 1
   end
 
+  test 'should get index filtered by price' do
+    get products_path(min_price: 200, max_price: 250)
+
+    assert_response :success
+    assert_select '.product', 1
+    assert_select 'h2', 'Switch Used'
+  end
+
   test 'should get show' do
     get product_path(products(:PS4))
 
