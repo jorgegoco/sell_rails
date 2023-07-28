@@ -24,6 +24,14 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_select 'h2', 'Switch Used'
   end
 
+  test 'should get index filtered by text' do
+    get products_path(query_text: 'Switch')
+
+    assert_response :success
+    assert_select '.product', 1
+    assert_select 'h2', 'Switch Used'
+  end
+
   test 'should get show' do
     get product_path(products(:PS4))
 
