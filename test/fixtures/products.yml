@@ -12,10 +12,148 @@ Switch:
   price: 225
   category: videogames
 
+nintendo64:
+  title: Nintendo 64 New
+  description: New Nintendo 64
+  price: 190
+  category: videogames
+
+megadrive:
+  title: Sega Megadrive
+  description: Works fine.
+  price: 90
+  category: videogames
+
+driver2:
+  title: Driver 2 for ps1
+  description: New Driver 2 for ps1
+  price: 25
+  category: videogames
+
+ps5:
+  title: PS5 nueva sin lector
+  description: Almost new
+  price: 650
+  category: videogames
+
+gameboy:
+  title: Game Boy Color
+  description: Black and white color
+  price: 150
+  category: videogames  
+
 Air:
   title: Macbook Air
   description: New Macbook Air
   price: 1000
   category: computers  
+
+imac:
+  title: iMac 27" 2015
+  description: i5 with 8gb of ram and SSD
+  price: 90
+  category: computers
+
+ryzen:
+  title: Ryzen 5950x
+  description: New
+  price: 590
+  category: computers
+
+nvidia:
+  title: Nvidia 3090ti
+  description: Almost new
+  price: 1500
+  category: computers
+
+ram:
+  title: 16GB Ram DDR4 3200mhz
+  description: Works fine
+  price: 95
+  category: computers
+
+renault:
+  title: Renault Clio 2009
+  description: 85000km, 95cv
+  price: 4500
+  category: cars
+
+seat:
+  title: Seat Panda classic
+  description: 90000km, 75cv. From 1980
+  price: 5500
+  category: cars
+
+michael:
+  title: Michael Jackson Thriller LP
+  description: New
+  price: 45
+  category: music
+
+queen:
+  title: Queen LP
+  description: Almost new
+  price: 35
+  category: music
+
+tv:
+  title: LG 48 TV
+  description: With smart TV and 4k
+  price: 350
+  category: electronic
+
+kindle:
+  title: Kindle 2010 edition
+  description: Works fine.
+  price: 35
+  category: electronic
+
+ipod:
+  title: iPod touch
+  description: New
+  price: 175
+  category: electronic
+
+harry:
+  title: Complete Harry Potter saga
+  description: Well preserved
+  price: 65
+  category: books
+
+hobbit:
+  title: The hobbit
+  description: Well preserved
+  price: 15
+  category: books
+
+iphone:
+  title: iPhone 13
+  description: Works fine
+  price: 400
+  category: mobile
+
+pixel:
+  title: Google Pixel 4
+  description: Battery lasts 2 days
+  price: 100
+  category: mobile
+
+surf:
+  title: Surfboard
+  description: Used only 3 times
+  price: 125
+  category: sports
+
+tennis:
+  title: Tennis racket
+  description: Carbon fiber
+  price: 135
+  category: sports
+
+skate:
+  title: Skateboard
+  description: Almost new, wheels new included
+  price: 75
+  category: sports  
 
 

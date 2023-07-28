@@ -7,4 +7,22 @@ computers:
   name: Computers
 
 clothes:
-  name: Clothes  
+  name: Clothes
+
+cars:
+  name: Cars
+
+music:
+  name: Music
+
+electronic:
+  name: Electronics
+
+books:
+  name: Books
+
+mobile:
+  name: Moviles
+
+sports:
+  name: Sports    
