@@ -5,155 +5,181 @@ PS4:
   description: New PS4
   price: 300
   category: videogames
+  user: joe
 
 Switch:
   title: Switch Used
   description: Used Switch
   price: 225
   category: videogames
+  user: doe
 
 nintendo64:
   title: Nintendo 64 New
   description: New Nintendo 64
   price: 190
   category: videogames
+  user: mary
 
 megadrive:
   title: Sega Megadrive
   description: Works fine.
   price: 90
   category: videogames
+  user: joe
 
 driver2:
   title: Driver 2 for ps1
   description: New Driver 2 for ps1
   price: 25
   category: videogames
+  user: doe
 
 ps5:
   title: PS5 nueva sin lector
   description: Almost new
   price: 650
   category: videogames
+  user: mary
 
 gameboy:
   title: Game Boy Color
   description: Black and white color
   price: 150
-  category: videogames  
+  category: videogames
+  user: joe  
 
 Air:
   title: Macbook Air
   description: New Macbook Air
   price: 1000
-  category: computers  
+  category: computers
+  user: doe  
 
 imac:
   title: iMac 27" 2015
   description: i5 with 8gb of ram and SSD
   price: 90
   category: computers
+  user: mary
 
 ryzen:
   title: Ryzen 5950x
   description: New
   price: 590
   category: computers
+  user: joe
 
 nvidia:
   title: Nvidia 3090ti
   description: Almost new
   price: 1500
   category: computers
+  user: doe
 
 ram:
   title: 16GB Ram DDR4 3200mhz
   description: Works fine
   price: 95
   category: computers
+  user: mary
 
 renault:
   title: Renault Clio 2009
   description: 85000km, 95cv
   price: 4500
   category: cars
+  user: joe
 
 seat:
   title: Seat Panda classic
   description: 90000km, 75cv. From 1980
   price: 5500
   category: cars
+  user: doe
 
 michael:
   title: Michael Jackson Thriller LP
   description: New
   price: 45
   category: music
+  user: mary
 
 queen:
   title: Queen LP
   description: Almost new
   price: 35
   category: music
+  user: joe
 
 tv:
   title: LG 48 TV
   description: With smart TV and 4k
   price: 350
   category: electronic
+  user: doe
 
 kindle:
   title: Kindle 2010 edition
   description: Works fine.
   price: 35
   category: electronic
+  user: mary
 
 ipod:
   title: iPod touch
   description: New
   price: 175
   category: electronic
+  user: joe
 
 harry:
   title: Complete Harry Potter saga
   description: Well preserved
   price: 65
   category: books
+  user: doe
 
 hobbit:
   title: The hobbit
   description: Well preserved
   price: 15
   category: books
+  user: mary
 
 iphone:
   title: iPhone 13
   description: Works fine
   price: 400
   category: mobile
+  user: joe
 
 pixel:
   title: Google Pixel 4
   description: Battery lasts 2 days
   price: 100
   category: mobile
+  user: doe
 
 surf:
   title: Surfboard
   description: Used only 3 times
   price: 125
   category: sports
+  user: mary
 
 tennis:
   title: Tennis racket
   description: Carbon fiber
   price: 135
   category: sports
+  user: joe
 
 skate:
   title: Skateboard
   description: Almost new, wheels new included
   price: 75
-  category: sports  
+  category: sports
+  user: doe  
 
 
