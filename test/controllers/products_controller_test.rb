@@ -1,6 +1,10 @@
 require 'test_helper'
 
 class ProductsControllerTest < ActionDispatch::IntegrationTest
+  def setup
+    login
+  end
+  
   test 'should get index' do
     get products_path
 
