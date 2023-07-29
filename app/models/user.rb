@@ -7,6 +7,8 @@ class User < ApplicationRecord
   length: { in: 3..15 }, format: { with: /\A[a-zA-Z0-9]+\Z/, message: "only allows letters and numbers" }
   validates :password, length: { minimum: 6}
 
+  has_many :products, dependent: :destroy
+
   before_save :downcase_attributes
 
   private
