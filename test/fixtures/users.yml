@@ -14,3 +14,4 @@ mary:
   email: mary@gmail.com 
   username: mary789
   password_digest: <%= BCrypt::Password.create('testme') %>
+  admin: true
