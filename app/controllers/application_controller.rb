@@ -2,12 +2,9 @@ class ApplicationController < ActionController::Base
   include Pagy::Backend
 
   class NotAuthorizedError < StandardError; end
+  
   rescue_from NotAuthorizedError do
     redirect_to products_path, alert: 'You are not allowed to do that'
-  end
-
-  def render_404
-    render file: "#{Rails.root}/public/404.html", status: :not_found
   end
 
   before_action :set_current_user
@@ -24,11 +21,7 @@ class ApplicationController < ActionController::Base
   end
 
   def authorize!(record = nil) 
-    is_allowed = if record
-      record.user_id == Current.user.id
-    else
-      Current.user.admin?
-    end
+    is_allowed = "#{controller_name.singularize}Policy".classify.constantize.new(record).send(action_name)
     raise NotAuthorizedError unless is_allowed 
   end 
 end
