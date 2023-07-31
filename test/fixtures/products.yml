@@ -5,7 +5,7 @@ PS4:
   description: New PS4
   price: 300
   category: videogames
-  user: joe
+  user: mary
 
 Switch:
   title: Switch Used
