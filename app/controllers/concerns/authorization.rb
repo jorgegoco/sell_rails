@@ -1,9 +1,9 @@
 module Authorization 
   extend ActiveSupport::Concern
 
+  class NotAuthorizedError < StandardError; end
+
   included do
-    class NotAuthorizedError < StandardError; end
-  
     rescue_from NotAuthorizedError do
       redirect_to products_path, alert: 'You are not allowed to do that'
     end
