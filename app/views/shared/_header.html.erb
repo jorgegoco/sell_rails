@@ -1,6 +1,7 @@
 <%= link_to products_path do %>
   <h1>Sell it</h1>
 <% end %>
+<%= link_to 'My Favorites', favorites_path if Current.user %>
 <%= link_to 'Add Product', new_product_path if Current.user %>
 <%= link_to 'Categories', categories_path if Current.user&.admin? %>
 <%= link_to 'Log in', new_session_path unless Current.user %>
