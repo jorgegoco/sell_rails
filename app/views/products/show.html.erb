@@ -9,8 +9,4 @@ turbo_confirm: 'Are you sure to delete this product?' } if @product.owner? %>
 
 <%= link_to "View all products from #{@product.user.username}", user_path(@product.user.username) %>
 
-<% if @product.favorite %>
-  <%= link_to '💔', favorite_path(@product.id), data: { turbo_method: :delete } %>
-<% else %>
-  <%= link_to '❤️', favorites_path(product_id: @product.id), data: { turbo_method: :post } %>
-<% end %>
+<%= render partial: 'favorite', locals: { product: @product } %>
