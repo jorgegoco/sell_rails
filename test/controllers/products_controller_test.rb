@@ -10,7 +10,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
     assert_response :success
     assert_select '.product', 12
-    assert_select '.category',9
+    assert_select '.category', 10
   end
 
   test 'should get index filtered by category' do

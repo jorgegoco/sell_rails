@@ -1,22 +1,25 @@
 # frozen_string_literal: true
 
 class CategoryComponent < ViewComponent::Base
+  attr_reader :category
+
   def initialize(category: nil)
+    super
     @category = category
   end
 
   def title
-    @category ? @category.name : 'All'
+    category ? category.name : 'All'
   end
 
   def link
-    @category ? products_path(category_id: @category.id) : products_path
+    category ? products_path(category_id: category.id) : products_path
   end
 
   def active?
-    return true if !@category && !params[:category_id]
+    return true if !category && !params[:category_id]
 
-    @category&.id == params[:category_id].to_i
+    category&.id == params[:category_id].to_i
   end
 
   def background 
@@ -24,6 +27,6 @@ class CategoryComponent < ViewComponent::Base
   end
 
   def classes
-    "text-gray-600 px-4 py-2 rounded-2xl drop-shadow-sm hover:bg-gray-300 #{background}"
+    "category text-gray-600 px-4 py-2 rounded-2xl drop-shadow-sm hover:bg-gray-300 #{background}"
   end
 end
