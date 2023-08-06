@@ -5,7 +5,7 @@ class User < ApplicationRecord
   format: { with: /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/, message: "must be a valid email address" }
   validates :username, presence: true, uniqueness: true,
   length: { in: 3..15 }, format: { with: /\A[a-zA-Z0-9]+\Z/, message: "only allows letters and numbers" }
-  validates :password, length: { minimum: 6}
+  validates :password, length: { minimum: 6}, if: :password_digest_changed?
 
   has_many :products, dependent: :destroy
   has_many :favorites, dependent: :destroy
