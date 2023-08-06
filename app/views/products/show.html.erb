@@ -10,3 +10,5 @@ turbo_confirm: 'Are you sure to delete this product?' } if @product.owner? %>
 <%= link_to "View all products from #{@product.user.username}", user_path(@product.user.username) %>
 
 <%= render partial: 'favorite', locals: { product: @product } %>
+
+<div data-controller="websocket-product" data-productid="<%= @product.id  %>"></div>
