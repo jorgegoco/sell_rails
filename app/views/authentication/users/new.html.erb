@@ -1,26 +1,26 @@
 <%= form_with(model: @user) do |form| %>
   <% @user.errors.full_messages.each do |error| %>
-    <div>
+    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-2 mb-4 rounded">
       <%= error %>
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :email %>
-    <%= form.email_field :email, required: true %>
+  <div class="my-4 text-center">
+    <%= form.label :email, class: "block text-sm font-bold mb-2 mt-4" %>
+    <%= form.email_field :email, required: true, class: "w-4/5 rounded sm:w-3/5 lg:w-2/5" %>
   </div>
 
-  <div>
-    <%= form.label :username %>
-    <%= form.text_field :username, required: true %>
+  <div class="mb-4 text-center">
+    <%= form.label :username, class: "block text-sm font-bold mb-2" %>
+    <%= form.text_field :username, required: true, class: "w-4/5 rounded sm:w-3/5 lg:w-2/5" %>
   </div>
 
-  <div>
-    <%= form.label :password %>
-    <%= form.password_field :password, required: true %>
+  <div class="mb-4 text-center">
+    <%= form.label :password, class: "block text-sm font-bold mb-2" %>
+    <%= form.password_field :password, required: true, class: "w-4/5 rounded sm:w-3/5 lg:w-2/5" %>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class="pt-4 text-center">
+    <%= form.submit "Sign Up", class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
   </div>
 <% end %>
