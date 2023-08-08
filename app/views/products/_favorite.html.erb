@@ -1,7 +1,9 @@
 <div id="favorite">
   <% if product.favorite %>
-    <%= link_to '💔', favorite_path(product.id), data: { turbo_method: :delete } %>
+    <%= link_to 'Remove from favorites ', favorite_path(product.id), data: { turbo_method: :delete }, class: "underline" %>
+    <span>💔</span>
   <% else %>
-    <%= link_to '❤️', favorites_path(product_id: product.id), data: { turbo_method: :post } %>
+    <%= link_to 'Add to favorites', favorites_path(product_id: product.id), data: { turbo_method: :post }, class: "underline" %>
+    <span class="text-red-500">❤️</span>
   <% end %>
 </div>
