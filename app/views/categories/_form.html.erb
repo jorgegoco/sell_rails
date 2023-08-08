@@ -6,11 +6,11 @@
   <% end %>
 
   <div>
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.label :name, class: "block text-sm font-bold mb-2" %>
+    <%= form.text_field :name, class: "rounded mb-2" %>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class="mt-4">
+    <%= form.submit "Update", class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
   </div>
 <% end %>
