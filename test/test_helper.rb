@@ -12,6 +12,6 @@ class ActiveSupport::TestCase
 
   # Add more helper methods to be used by all tests here...
   def login
-    post sessions_path, params: { login: 'mary@gmail.com', password: 'testme' }
+    post sessions_path, params: { login: 'mary@sellit.com', password: 'testme' }
   end
 end
