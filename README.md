@@ -51,6 +51,7 @@
 
 - **Any user can watch for products**
 - **Registered users can add products to sell**
+- **Admin users can create categories**"
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -58,7 +59,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://github.com/jorgegoco/sell_rails)
+- [Live Demo Link](https://sellit-rails.fly.dev/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,9 +120,7 @@ To run the project, execute the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **Add payment methods**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
