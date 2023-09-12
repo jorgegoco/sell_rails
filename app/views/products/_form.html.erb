@@ -5,19 +5,19 @@
     </div>
   <% end %>
   <div>
-    <%= form.text_field :title, placeholder: "What do you want to sell?", class: "rounded-2xl border-gray-200 mb-4 w-full" %>
+    <%= form.text_field :title, placeholder: t(".title_placeholder"), class: "rounded-2xl border-gray-200 mb-4 w-full" %>
   </div>
 
   <div>
-    <%= form.text_area :description, placeholder: "Could you describe your product?", class: "rounded-2xl border-gray-200 mb-4 w-full", rows: 5 %>
+    <%= form.text_area :description, placeholder: t(".description_placeholder"), class: "rounded-2xl border-gray-200 mb-4 w-full", rows: 5 %>
   </div>
 
   <div>
-    <%= form.number_field :price, placeholder: "For how much?", class: "rounded-2xl border-gray-200 mb-4 w-full" %>
+    <%= form.number_field :price, placeholder: t(".price_placeholder"), class: "rounded-2xl border-gray-200 mb-4 w-full" %>
   </div>
 
   <div>
-    <%= form.collection_select :category_id, Category.all.order(name: :asc), :id, :name, { prompt: "In what category could fit better?" }, { class: "rounded-2xl border-gray-200 mb-4 w-full text-gray-500"} %>
+    <%= form.collection_select :category_id, Category.all.order(name: :asc), :id, :name, { prompt: t(".category_placeholder") }, { class: "rounded-2xl border-gray-200 mb-4 w-full text-gray-500"} %>
   </div>
 
   <div class="rounded-2xl border-gray-200 mb-4 w-full border-[1px] p-2 text-gray-500">
@@ -25,5 +25,5 @@
     <%= form.file_field :photo %>
   </div>
 
-  <%= form.submit "Sell it now!", class: "px-4 py-2 font-semibold text-sm bg-cyan-500 text-white rounded-2xl cursor-pointer shadow-sm" %>
+  <%= form.submit t('.submit'), class: "px-4 py-2 font-semibold text-sm bg-cyan-500 text-white rounded-2xl cursor-pointer shadow-sm" %>
 <% end %>

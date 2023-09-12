@@ -9,15 +9,15 @@ class Authentication::SessionsController < ApplicationController
 
     if @user&.authenticate(params[:password])
       session[:user_id] = @user.id
-      redirect_to products_path, notice: 'Logged in!'
+      redirect_to products_path, notice: t('.created')
     else
-      redirect_to new_session_path, alert: 'Invalid login!'
+      redirect_to new_session_path, alert: t('.failed')
     end
   end
 
   def destroy
     session.delete(:user_id)
 
-    redirect_to products_path, notice: 'Logged out!'
+    redirect_to products_path, notice: t('.destroyed')
   end
 end

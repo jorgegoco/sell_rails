@@ -3,7 +3,7 @@ module Error
 
   included do
     rescue_from ActiveRecord::RecordNotFound do
-      redirect_to products_path, alert: 'User not found!'
+      redirect_to products_path, alert: t('.common.not_found')
     end
   end
 end

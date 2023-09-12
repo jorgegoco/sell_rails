@@ -1,2 +1,5 @@
 en:
-  all: "All"
+  all: 'All'
+
+es:
+  all: 'Cualquiera'

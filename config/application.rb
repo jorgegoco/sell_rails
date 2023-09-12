@@ -19,6 +19,12 @@ module SellRails
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
+    # available languages
+    config.i18n.available_locales = [:en, :es]
+
+    # lenguage by default
+    config.i18n.default_locale = :en
+
     # Allow multiquery
     config.active_record.async_query_executor = :global_thread_pool 
 
