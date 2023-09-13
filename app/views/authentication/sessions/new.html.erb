@@ -1,15 +1,15 @@
 <%= form_with(url: sessions_path) do |form| %>
   <div class="my-4 text-center">
-    <%= form.label :login, class: "block text-sm font-bold mb-2 mt-4" %>
+    <%= form.label :login, t('.name'), class: "block text-sm font-bold mb-2 mt-4" %>
     <%= form.text_field :login, required: true, class: "w-4/5 rounded sm:w-3/5 lg:w-2/5" %>
   </div>
 
   <div class="mb-4 text-center">
-    <%= form.label :password, class: "block text-sm font-bold mb-2 mt-4" %>
+    <%= form.label :password, t('.password'), class: "block text-sm font-bold mb-2 mt-4" %>
     <%= form.password_field :password, required: true, class: "w-4/5 rounded sm:w-3/5 lg:w-2/5" %>
   </div>
 
   <div class="pt-4 text-center">
-    <%= form.submit "Log In", class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+    <%= form.submit t('.button'), class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
   </div>
 <% end %>

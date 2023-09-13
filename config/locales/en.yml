@@ -25,23 +25,33 @@ en:
     not_authorized: 'You don not have permissions for this action'
     not_found: 'Not found'
   shared:
-    header:
+    items:
       add: 'Add product'
       login: 'Login'
       register: 'Register'
       logout: 'Logout'
       favorites: 'My favorites'
+      categories: 'Categories'
   authentication:
     users:
+      new:
+        button: 'Sign Up'
       create:
         created: 'Your account has been created!'
     sessions:
+      new:
+        button: 'Log In'
+        name: 'Log In with your email or username'
+        password: 'Password'
       create:
         created: 'Welcome!'
         failed: 'Invalid login!'
       destroy:
         destroyed: 'Session ended. Bye!'
   products:
+    favorite:
+      add: 'Add to favorites'
+      remove: 'Remove from favorites'
     edit:
       title: 'Edit product'
     new:

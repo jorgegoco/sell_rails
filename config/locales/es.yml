@@ -14,34 +14,44 @@ es:
         photo: 'Foto'
       user:
         email: 'Correo electrónico'
-        username: 'Usuario'
+        username: 'Nombre de usuario'
         password: 'Contraseña'
       category:
         name: 'Nombre'
   common:
     confirm: '¿Estás seguro?'
     back: 'Volver'
-    not_logged_in: 'Tienes que hacer login o crearte una cuenta'
+    not_logged_in: 'Tienes que acceder o crearte una cuenta'
     not_authorized: 'No tienes permisos para esta acción'
     not_found: 'No se ha encontrado'
   shared:
-    header:
+    items:
       add: 'Añadir producto'
       login: 'Acceso'
       register: 'Registro'
       logout: 'Salir'
       favorites: 'Mis favoritos'
+      categories: 'Categorías'
   authentication:
     users:
+      new:
+        button: 'Registro'
       create:
         created: 'Tu cuenta se ha creado!'
     sessions:
+      new:
+        button: 'Acceso'
+        name: 'Accede con tu correo electrónico o nombre de usuario'
+        password: 'Contraseña'
       create:
         created: 'Bienvenido!'
-        failed: 'Login inválido!'
+        failed: 'Acceso denegado!'
       destroy:
         destroyed: 'Tu sesión ha terminado! Hasta la próxima'
   products:
+    favorite:
+      add: 'Añadir a favoritos'
+      remove: 'Quitar de favoritos'
     edit:
       title: 'Editar producto'
     new:
