@@ -35,6 +35,8 @@ en:
   authentication:
     users:
       new:
+        name: 'Username'
+        password: 'Password'
         button: 'Sign Up'
       create:
         created: 'Your account has been created!'

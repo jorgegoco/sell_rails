@@ -35,6 +35,8 @@ es:
   authentication:
     users:
       new:
+        name: 'Nombre de usuario'
+        password: 'Contraseña'
         button: 'Registro'
       create:
         created: 'Tu cuenta se ha creado!'
