@@ -5,7 +5,7 @@ module Authorization
 
   included do
     rescue_from NotAuthorizedError do
-      redirect_to products_path, alert: 'You are not allowed to do that'
+      redirect_to products_path, alert: t('common.not_authorized')
     end
 
     private
